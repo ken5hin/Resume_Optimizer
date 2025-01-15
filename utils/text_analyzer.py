@@ -10,7 +10,6 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
-nltk.download('tokenizers/punkt/english.pickle')
 
 def preprocess_text(text: str) -> str:
     """Clean and preprocess text."""
