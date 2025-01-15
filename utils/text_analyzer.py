@@ -1,5 +1,5 @@
 import nltk
-from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from collections import Counter
@@ -10,7 +10,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
-
+nltk.download('tokenizers/punkt/english.pickle')
 
 def preprocess_text(text: str) -> str:
     """Clean and preprocess text."""
@@ -31,8 +31,8 @@ def extract_keywords(text: str) -> list:
     stop_words = set(stopwords.words('english'))
     lemmatizer = WordNetLemmatizer()
 
-    # Tokenize
-    tokens = word_tokenize(text.lower())
+    # Simple word tokenization using split()
+    tokens = text.lower().split()
 
     # Remove stopwords and lemmatize
     keywords = [lemmatizer.lemmatize(token) for token in tokens 
