@@ -1,0 +1,93 @@
+/* Custom styles for the ATS Optimizer */
+
+/* Main container */
+.main {
+    padding: 2rem;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+/* Metrics */
+.metrics-container {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* File uploader */
+.uploadedFile {
+    border: 2px dashed #0066cc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Text areas */
+.stTextArea textarea {
+    border-radius: 5px;
+    border-color: #e0e0e0;
+}
+
+/* Buttons */
+.stButton button {
+    border-radius: 5px;
+    background-color: #0066cc;
+    color: white;
+    font-weight: 500;
+}
+
+/* Expandable sections */
+.streamlit-expanderHeader {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Progress bars */
+.stProgress > div > div > div {
+    background-color: #0066cc;
+}
+
+/* Alerts */
+.stAlert {
+    border-radius: 5px;
+}
+
+/* Recommendations */
+.recommendation-item {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Keywords */
+.keyword-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+}
